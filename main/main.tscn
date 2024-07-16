@@ -1,0 +1,138 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmti8n7obdqkn"]
+
+[ext_resource type="Texture2D" uid="uid://bv0tq1siwo1w8" path="res://assets/background/sky.png" id="1_57r14"]
+[ext_resource type="Script" path="res://main/main.gd" id="1_t7j4p"]
+[ext_resource type="LabelSettings" uid="uid://bacsx35jjngfc" path="res://assets/LG_72_Red.tres" id="3_dic6d"]
+[ext_resource type="FontFile" uid="uid://8g5m07qgfvod" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="4_x1bms"]
+[ext_resource type="AudioStream" uid="uid://cw0ktmbcdn731" path="res://assets/audio/bgm_menu.mp3" id="5_eaqdy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o1ho6"]
+font = ExtResource("4_x1bms")
+font_size = 48
+font_color = Color(0.839216, 0.886275, 0.960784, 1)
+outline_size = 9
+outline_color = Color(0.188235, 0.27451, 0.552941, 1)
+shadow_size = 5
+shadow_color = Color(0.368627, 0.521569, 0.721569, 0.176471)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_d3lim"]
+font = ExtResource("4_x1bms")
+font_size = 24
+font_color = Color(0.784314, 0.243137, 0.243137, 1)
+outline_size = 3
+outline_color = Color(0.843137, 0.305882, 0.305882, 1)
+shadow_size = 2
+shadow_color = Color(0.843137, 0.305882, 0.305882, 0.176471)
+
+[sub_resource type="Animation" id="Animation_og0tb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC/Label2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_54ook"]
+resource_name = "flash"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MC/Label2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t5j3p"]
+_data = {
+"RESET": SubResource("Animation_og0tb"),
+"flash": SubResource("Animation_54ook")
+}
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t7j4p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_57r14")
+expand_mode = 4
+
+[node name="MC" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 24
+
+[node name="Label" type="Label" parent="MC"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "TAPPY
+PLANE"
+label_settings = ExtResource("3_dic6d")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="MC"]
+layout_mode = 2
+text = "Press Space
+To Play"
+label_settings = SubResource("LabelSettings_o1ho6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HB" type="HBoxContainer" parent="MC"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Label" type="Label" parent="MC/HB"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "HIGHSCORE"
+label_settings = SubResource("LabelSettings_d3lim")
+vertical_alignment = 1
+
+[node name="HighScoreLabel" type="Label" parent="MC/HB"]
+layout_mode = 2
+text = "000"
+label_settings = SubResource("LabelSettings_d3lim")
+vertical_alignment = 1
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_eaqdy")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_t5j3p")
+}
+autoplay = "flash"
