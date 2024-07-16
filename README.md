@@ -6,10 +6,10 @@
 Node-based architecture (Godot)
 
 # 📦 Features
-* Pantalla de inicio.
-* Puntuacion mas alta.
-* Reinicio de juego
-* Experiencia infinita de juego
+* Start screen.
+* Highest score.
+* Game restart
+* Endless gaming experience
 
 # ▶ Demo
 ![GAMEPLAY](https://github.com/user-attachments/assets/5928e480-7135-44f5-adb6-55a639c0ae30)
