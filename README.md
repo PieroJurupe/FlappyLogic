@@ -1,5 +1,5 @@
-![videogame](https://github.com/user-attachments/assets/9c1c36b7-db7b-46ba-8e46-f6a589bd4542)
-#  ![tappy](https://github.com/user-attachments/assets/a5845af5-d611-403a-806c-1f10072c189e) FlappyLogic
+![videogame](https://github.com/user-attachments/assets/166427a8-66cf-41e3-8e9e-d716a3203f3c)
+# ![aaaa](https://github.com/user-attachments/assets/c2fe82bc-5f1f-4837-8367-944b5a5e4f60) FlappyLogic
 > A simple telephone game to understand infinite games and how to solve it with programming logic. 
 > Divided into packages and nodes for better understanding taking advantage of the GDscript programming model
 # 🏛 Architecture
