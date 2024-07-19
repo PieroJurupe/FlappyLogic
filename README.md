@@ -2,6 +2,9 @@
 # ![aaaa](https://github.com/user-attachments/assets/c2fe82bc-5f1f-4837-8367-944b5a5e4f60) FlappyLogic
 > A simple mobile game to understand infinite games and how to solve it with programming logic. 
 > Divided into packages and nodes for better understanding taking advantage of the GDscript programming model
+>
+> Language project: English
+
 # 🏛 Architecture
 Node-based architecture (Godot)
 
