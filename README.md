@@ -1,6 +1,6 @@
 ![banner](https://github.com/user-attachments/assets/795a0452-ec0e-4420-aefd-c9dd8204feb3)
 
-# ![TAPPY](https://github.com/user-attachments/assets/c2146b37-afca-4622-b85d-61faae42dbc3) FlappyLogic
+# ![TAPPY (1)](https://github.com/user-attachments/assets/be944f30-b7b2-4ed7-b558-edaf78229cef) FlappyLogic
 > Mobile application that shows the logic of the famous game using godot
 > 
 > Language project: Spanish
