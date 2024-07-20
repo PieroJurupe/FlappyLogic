@@ -3,7 +3,7 @@
 # ![TAPPY (1)](https://github.com/user-attachments/assets/be944f30-b7b2-4ed7-b558-edaf78229cef) FlappyLogic
 > Mobile application that shows the logic of the famous game using godot
 > 
-> Language project: Spanish
+> Language project: English
 
 # 🏛 Architecture
 This software project was built using godot node architecture.
