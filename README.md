@@ -1,28 +1,28 @@
-![videogame](https://github.com/user-attachments/assets/166427a8-66cf-41e3-8e9e-d716a3203f3c)
-# ![aaaa](https://github.com/user-attachments/assets/c2fe82bc-5f1f-4837-8367-944b5a5e4f60) FlappyLogic
-> A simple mobile game to understand infinite games and how to solve it with programming logic. 
-> Divided into packages and nodes for better understanding taking advantage of the GDscript programming model
->
-> Language project: English
+![FYG BANNER](https://github.com/user-attachments/assets/0797e147-7b90-4e3e-b8ac-6d7e173d2f4e)
+
+# ![mp (1)](https://github.com/user-attachments/assets/39b2f592-9180-4025-81d0-428e7a161be1) Find-Your-Game
+> Web project done in two hours as a challenge. 
+> Test GPT API in a small test that will give you recommended video games
+> Language project: Spanish
 
 # 🏛 Architecture
-Node-based architecture (Godot)
+This software project was built using a MVC architecture.
 
 # 📦 Features
-* Start screen.
-* Highest score.
-* Game restart
-* Endless gaming experience
+* Home screen.
+* Chatbot with GPT.
+* Show recommended video games (Available only with test script)
 
 # ▶ Demo
-![GAMEPLAY](https://github.com/user-attachments/assets/5928e480-7135-44f5-adb6-55a639c0ae30)
+![Diseño sin título (1)](https://github.com/user-attachments/assets/338bb2fc-23e8-435f-adc0-082bcb1630aa)
 
 # ⚙ Technologies used
-* GDScript
-* Free use Sprites 
+* HTML
+* CSS
+* JS 
 
 # 🛠 How to run
-* Use Godot 4.0 and select main as main scene 
+* Use VsCode to deploy and run the project you can use a test script if you dont have a GPT API KEY.
 
 # 👷‍♀️ Contributors
 * [Piero Jurupe](https://github.com/PieroJurupe)
